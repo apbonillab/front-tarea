@@ -1,0 +1,1154 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>uniandes-team-front documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">uniandes-team-front documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>LandingComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/landing/landing.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-landing</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>landing.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./landing.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#countryForm">countryForm</a>
+                            </li>
+                            <li>
+                                <a href="#countrySelected">countrySelected</a>
+                            </li>
+                            <li>
+                                <a href="#listCity">listCity</a>
+                            </li>
+                            <li>
+                                <a href="#listCountry">listCountry</a>
+                            </li>
+                            <li>
+                                <a href="#listPlanType">listPlanType</a>
+                            </li>
+                            <li>
+                                <a href="#planFilter">planFilter</a>
+                            </li>
+                            <li>
+                                <a href="#plans">plans</a>
+                            </li>
+                            <li>
+                                <a href="#plansFilter">plansFilter</a>
+                            </li>
+                            <li>
+                                <a href="#plantype">plantype</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getCountries">getCountries</a>
+                            </li>
+                            <li>
+                                <a href="#getPlans">getPlans</a>
+                            </li>
+                            <li>
+                                <a href="#getPlanType">getPlanType</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onChangeCountry">onChangeCountry</a>
+                            </li>
+                            <li>
+                                <a href="#search">search</a>
+                            </li>
+                            <li>
+                                <a href="#viewDetailPlan">viewDetailPlan</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(planService: <a href="../injectables/PlanService.html">PlanService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, citiesService: <a href="../injectables/CitiesService.html">CitiesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/landing/landing.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>planService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/PlanService.html" target="_self" >PlanService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>citiesService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/CitiesService.html" target="_self" >CitiesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getCountries"></a>
+                        <span class="name">
+                            <b>
+                            getCountries
+                            </b>
+                            <a href="#getCountries"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getCountries()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/landing/landing.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getPlans"></a>
+                        <span class="name">
+                            <b>
+                            getPlans
+                            </b>
+                            <a href="#getPlans"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getPlans()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/landing/landing.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getPlanType"></a>
+                        <span class="name">
+                            <b>
+                            getPlanType
+                            </b>
+                            <a href="#getPlanType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getPlanType()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/landing/landing.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/landing/landing.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onChangeCountry"></a>
+                        <span class="name">
+                            <b>
+                            onChangeCountry
+                            </b>
+                            <a href="#onChangeCountry"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onChangeCountry()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/landing/landing.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="search"></a>
+                        <span class="name">
+                            <b>
+                            search
+                            </b>
+                            <a href="#search"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>search()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/landing/landing.component.ts:62</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="viewDetailPlan"></a>
+                        <span class="name">
+                            <b>
+                            viewDetailPlan
+                            </b>
+                            <a href="#viewDetailPlan"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>viewDetailPlan()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/landing/landing.component.ts:80</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="countryForm"></a>
+                        <span class="name">
+                            <b>
+                            countryForm
+                            </b>
+                            <a href="#countryForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>countryForm:     <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/landing/landing.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="countrySelected"></a>
+                        <span class="name">
+                            <b>
+                            countrySelected
+                            </b>
+                            <a href="#countrySelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>countrySelected:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/landing/landing.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listCity"></a>
+                        <span class="name">
+                            <b>
+                            listCity
+                            </b>
+                            <a href="#listCity"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>listCity:     <code><a href="../classes/City.html" target="_self" >City[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/City.html" target="_self" >City[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/landing/landing.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listCountry"></a>
+                        <span class="name">
+                            <b>
+                            listCountry
+                            </b>
+                            <a href="#listCountry"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>listCountry:     <code><a href="../classes/Country.html" target="_self" >Country[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Country.html" target="_self" >Country[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/landing/landing.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listPlanType"></a>
+                        <span class="name">
+                            <b>
+                            listPlanType
+                            </b>
+                            <a href="#listPlanType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>listPlanType:     <code><a href="../classes/PlanType.html" target="_self" >PlanType[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/PlanType.html" target="_self" >PlanType[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/landing/landing.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="planFilter"></a>
+                        <span class="name">
+                            <b>
+                            planFilter
+                            </b>
+                            <a href="#planFilter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>planFilter:     <code><a href="../classes/PlanFilter.html" target="_self" >PlanFilter</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/PlanFilter.html" target="_self" >PlanFilter</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/landing/landing.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="plans"></a>
+                        <span class="name">
+                            <b>
+                            plans
+                            </b>
+                            <a href="#plans"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>plans:     <code><a href="../classes/Plan.html" target="_self" >Plan[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Plan.html" target="_self" >Plan[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/landing/landing.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="plansFilter"></a>
+                        <span class="name">
+                            <b>
+                            plansFilter
+                            </b>
+                            <a href="#plansFilter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>plansFilter:     <code><a href="../classes/Plan.html" target="_self" >Plan[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Plan.html" target="_self" >Plan[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/landing/landing.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="plantype"></a>
+                        <span class="name">
+                            <b>
+                            plantype
+                            </b>
+                            <a href="#plantype"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>plantype:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/landing/landing.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import {PlanService} from &#x27;../plan/plan.service&#x27;;
+import {Plan} from &#x27;../domain/plan&#x27;;
+import {PlanFilter} from &#x27;../domain/planFilter&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import {Country} from &#x27;../domain/country&#x27;;
+import { FormGroup } from &quot;@angular/forms&quot;;
+import { PlanType } from &quot;src/app/domain/planType&quot;;
+import { CitiesService } from &quot;src/app/services/cities.service&quot;;
+import { City } from &quot;src/app/domain/city&quot;;
+
+
+@Component({
+  selector: &#x27;app-landing&#x27;,
+  templateUrl: &#x27;./landing.component.html&#x27;,
+  styleUrls: [&#x27;./landing.component.css&#x27;]
+})
+export class LandingComponent implements OnInit {
+
+  constructor(private planService: PlanService,
+              private router:Router,
+              private citiesService:CitiesService
+              ) { }
+
+  plans: Plan[];
+  plansFilter: Plan[];
+  planFilter:PlanFilter; 
+  listCountry: Country [];
+  listCity: City [];
+  listPlanType: PlanType [];
+  countryForm: FormGroup;
+  countrySelected:string;
+  plantype:string;
+   
+    getPlans(): void {
+      this.planService.getPlans()
+          .subscribe(plans &#x3D;&gt; this.plans &#x3D; plans);
+  }
+  ngOnInit() {
+    this.getPlans();
+    this.getCountries();
+    this.getPlanType(); 
+    this.planFilter &#x3D; new PlanFilter(&quot;&quot;,1,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;);
+  
+  }
+
+  getCountries():void{
+    this.planService.getCountries()
+    .subscribe(listCountry &#x3D;&gt; this.listCountry &#x3D; listCountry);
+  }
+
+  getPlanType():void{
+    this.planService.getPlansType()
+    .subscribe(listPlanType &#x3D;&gt; this.listPlanType &#x3D; listPlanType);
+  }
+
+  onChangeCountry(){
+    this.citiesService.getCityByCountry(this.countrySelected).
+    subscribe(listCity&#x3D;&gt; this.listCity &#x3D; listCity);
+  }
+
+  search():void{  
+   let nameCity &#x3D;  this.listCity.filter(e&#x3D;&gt;{
+       return  e.idCities.toString() &#x3D;&#x3D; this.planFilter.city
+    } )[0].name;
+    let namePlanType &#x3D;  this.listPlanType.filter(e&#x3D;&gt;{
+       return  e.idPlanType.toString() &#x3D;&#x3D; this.planFilter.typePlan
+    } )[0].name;
+    this.planFilter.nameCity &#x3D; nameCity;
+    this.planFilter.namePlanType&#x3D; namePlanType;
+    this.planService.getPlansCustom(this.planFilter).
+    subscribe(plansFilter&#x3D;&gt; {
+      this.planService.savePlanCustom(plansFilter); 
+
+      this.router.navigateByUrl(&#x27;/plans/filter/results&#x27;); 
+    });
+   
+  }
+
+  viewDetailPlan():void{     
+      this.router.navigateByUrl(&#x27;/plan/detail&#x27;);
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!--&lt;app-header&gt;&lt;/app-header&gt;--&gt;
+
+&lt;!--filters--&gt;
+&lt;header class&#x3D;&quot;masthead text-white&quot;&gt;
+  &lt;div class&#x3D;&quot;overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-sm-12&quot;&gt;
+        &lt;h1 class&#x3D;&quot;mb-5  text-center&quot;&gt;Sueña tu viaje, nosotros te lo organizamos!&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;form&gt;
+
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group col-sm-6&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-4&quot; for&#x3D;&quot;tipoPlan&quot;&gt;Tipo de Plan&lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-8&quot;&gt;
+                &lt;select class&#x3D;&#x27;form-control&#x27; [(ngModel)]&#x3D;&quot;planFilter.typePlan&quot; name&#x3D;&quot;plantypename&quot;&gt;
+                    &lt;option [ngValue]&#x3D;&quot;plantype.idPlanType&quot; *ngFor&#x3D;&quot;let plantype of listPlanType&quot; &gt;{{plantype.name}}&lt;/option&gt; 
+                  &lt;/select&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group col-sm-6&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-4&quot; for&#x3D;&quot;numPersonas&quot;&gt;Número de Personas&lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-8&quot;&gt;
+              &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;numPersons&quot; name&#x3D;&quot;numPersons&quot; min&#x3D;&quot;1&quot; max&#x3D;&quot;12&quot; [(ngModel)]&#x3D;planFilter.numPersons /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group col-sm-6&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+              &lt;label class&#x3D;&quot;control-label col-sm-4&quot; for&#x3D;&quot;numPersonas&quot;&gt;Número de Días&lt;/label&gt;
+              &lt;div class&#x3D;&quot;col-sm-8&quot;&gt;
+                &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control&quot;  [(ngModel)]&#x3D;&quot;planFilter.numDays&quot;  id&#x3D;&quot;numPersons&quot; name&#x3D;&quot;numPersons&quot;  min&#x3D;&quot;1&quot; max&#x3D;&quot;5&quot; /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot; col-sm-6&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-4&quot; for&#x3D;&quot;pais&quot;&gt;Pais&lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-8&quot;&gt;
+              
+               
+                    &lt;select class&#x3D;&#x27;form-control&#x27; [(ngModel)]&#x3D;&quot;countrySelected&quot; name&#x3D;&quot;countryName&quot; (change)&#x3D;&quot;onChangeCountry()&quot; &gt;
+                      &lt;option [ngValue]&#x3D;&quot;country.id&quot; *ngFor&#x3D;&quot;let country of listCountry&quot;&gt;{{country.name}}&lt;/option&gt;
+                    &lt;/select&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group col-sm-6&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-4 &quot; for&#x3D;&quot;ciudad&quot;&gt;Ciudad&lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-8&quot;&gt;
+                &lt;select class&#x3D;&#x27;form-control&#x27; [(ngModel)]&#x3D;&quot;planFilter.city&quot; name&#x3D;&quot;cityName&quot; &gt;
+                    &lt;option [ngValue]&#x3D;&quot;city.idCities&quot;  *ngFor&#x3D;&quot;let city of listCity&quot;&gt;{{city.name}}&lt;/option&gt; 
+                  &lt;/select&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-sm-12&quot;&gt;
+            &lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; value&#x3D;&quot;Buscar&quot; (click)&#x3D;&quot;search()&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      
+
+    &lt;/form&gt;
+
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!--plans gallery--&gt;
+&lt;div class&#x3D;&quot;row&quot;&gt;
+
+    &lt;div class&#x3D;&quot;gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6&quot; *ngFor &#x3D; &quot;let plan of plans&quot;&gt;   
+        &lt;div class&#x3D;&quot;card&quot;&gt;
+						&lt;img class&#x3D;&quot;card-img-center img-fluid&quot; alt&#x3D;&quot; {{plan.name}}&quot; src&#x3D;&quot;{{plan.image}}&quot; /&gt;
+						&lt;div class&#x3D;&quot;card-block&quot;&gt;
+							&lt;h3 class&#x3D;&quot;card-title text-center&quot;&gt;
+                  {{plan.name}}
+							&lt;/h3&gt;
+							&lt;p class&#x3D;&quot;card-text text-justify&quot;&gt;
+							{{plan.description}}
+							&lt;/p&gt;
+							&lt;p&gt;
+								&lt;a class&#x3D;&quot;btn&quot; role&#x3D;&quot;button&quot; (click)&#x3D;&quot;viewDetailPlan(plan)&quot;&gt;Ver mas...&lt;/a&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+    &lt;/div&gt;
+ &lt;/div&gt; 
+
+
+&lt;!-- Footer --&gt;
+&lt;!--&lt;app-footer&gt;&lt;/app-footer&gt;--&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!--<app-header></app-header>--><!--filters--><header class="masthead text-white">  <div class="overlay"></div>  <div class="container">    <div class="row">      <div class="col-sm-12">        <h1 class="mb-5  text-center">Sueña tu viaje, nosotros te lo organizamos!</h1>      </div>    </div>    <form>      <div class="row">        <div class="form-group col-sm-6">          <div class="row">            <label class="control-label col-sm-4" for="tipoPlan">Tipo de Plan</label>            <div class="col-sm-8">                <select class=\'form-control\' [(ngModel)]="planFilter.typePlan" name="plantypename">                    <option [ngValue]="plantype.idPlanType" *ngFor="let plantype of listPlanType" >{{plantype.name}}</option>                   </select>            </div>          </div>        </div>        <div class="form-group col-sm-6">          <div class="row">            <label class="control-label col-sm-4" for="numPersonas">Número de Personas</label>            <div class="col-sm-8">              <input type="number" class="form-control" id="numPersons" name="numPersons" min="1" max="12" [(ngModel)]=planFilter.numPersons />            </div>          </div>        </div>        <div class="form-group col-sm-6">            <div class="row">              <label class="control-label col-sm-4" for="numPersonas">Número de Días</label>              <div class="col-sm-8">                <input type="number" class="form-control"  [(ngModel)]="planFilter.numDays"  id="numPersons" name="numPersons"  min="1" max="5" />              </div>            </div>          </div>      </div>      <div class="row">        <div class=" col-sm-6">          <div class="row">            <label class="control-label col-sm-4" for="pais">Pais</label>            <div class="col-sm-8">                                                 <select class=\'form-control\' [(ngModel)]="countrySelected" name="countryName" (change)="onChangeCountry()" >                      <option [ngValue]="country.id" *ngFor="let country of listCountry">{{country.name}}</option>                    </select>            </div>          </div>        </div>        <div class="form-group col-sm-6">          <div class="row">            <label class="control-label col-sm-4 " for="ciudad">Ciudad</label>            <div class="col-sm-8">                <select class=\'form-control\' [(ngModel)]="planFilter.city" name="cityName" >                    <option [ngValue]="city.idCities"  *ngFor="let city of listCity">{{city.name}}</option>                   </select>            </div>          </div>        </div>      </div>              <div class="row">          <div class="col-sm-12">            <input type="button" class="btn btn-default" value="Buscar" (click)="search()" />          </div>        </div>          </form>  </div></header><!--plans gallery--><div class="row">    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6" *ngFor = "let plan of plans">           <div class="card">						<img class="card-img-center img-fluid" alt=" {{plan.name}}" src="{{plan.image}}" />						<div class="card-block">							<h3 class="card-title text-center">                  {{plan.name}}							</h3>							<p class="card-text text-justify">							{{plan.description}}							</p>							<p>								<a class="btn" role="button" (click)="viewDetailPlan(plan)">Ver mas...</a>							</p>						</div>					</div>    </div> </div> <!-- Footer --><!--<app-footer></app-footer>--></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'PlanDetailComponent', 'selector': 'app-plan-detail'},{'name': 'PlanFilterResultComponent', 'selector': 'app-plan-filter-result'},{'name': 'PlanListComponent', 'selector': 'app-plan-list'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'LandingComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LandingComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

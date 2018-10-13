@@ -1,0 +1,76 @@
+<!--filters-->
+<header class="">
+  <br>
+  <div class="container jumbotron">
+
+    <div class="row" >
+      <div class="col-sm-12">
+        <h1 class="mb-5">Sugerencias Para tus Planes</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <div class="row">
+          <label class="control-label col-sm-4 font-weight-bold">Tipo de Plan:</label>
+          <div class="col-sm-8">
+            <span>{{planFilter.namePlanType}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group col-sm-6">
+        <div class="row">
+          <label class="control-label col-sm-4 font-weight-bold">Número de Personas:</label>
+          <div class="col-sm-8">
+            <span>{{planFilter.numPersons}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class=" col-sm-6">
+        <div class="row">
+          <label class="control-label col-sm-4 font-weight-bold">Ciudad:</label>
+          <div class="col-sm-8">
+            <span>{{planFilter.nameCity}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   
+  </div>
+</header>
+
+<!--plans gallery-->
+<div class="row" *ngIf="plans && plans.length >0">
+
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12" *ngFor="let plan of plans">
+    <div class="card">
+      <img class="card-img-center img-fluid" alt=" {{plan.name}}" src="{{plan.image}}" />
+      <div class="card-block">
+        <h3 class="card-title text-center">
+          {{plan.name}}
+        </h3>
+        <p class="card-text text-justify">
+          {{plan.description}}
+        </p>
+        <p>
+          <a class="btn" role="button" (click)="viewDetailPlan(plan)">Realizar Reserva...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-12">
+  <div class="alert alert-warning" *ngIf="!plans || plans.length <=0">
+    Not Found Plans
+  </div>
+</div>
+</div>
+</div>

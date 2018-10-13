@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+// Core variables and mixins
+
+
+
+@import "./style/scss/variables.scss";
+@import "./style/scss/mixins.scss";
+// Global CSS
+@import "./style/scss/global.scss";
+// Components
+@import "./style/scss/masthead.scss";
+@import "./style/scss/showcase.scss";
+@import "./style/scss/icons.scss";
+@import "./style/scss/testimonials.scss";
+@import "./style/scss/call-to-action.scss";
+@import "./style/scss/footer.scss";
+@import "./style/landing-page.scss";

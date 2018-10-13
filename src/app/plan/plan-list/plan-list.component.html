@@ -1,0 +1,18 @@
+<h1>
+  Planes Disponibles:
+</h1>
+<ul *ngFor = "let plan of plans">
+  <li>
+    <h4>{{ plan.planName }}</h4>
+    <img src="{{plan.image}}" style="width: 200px; height: 200px">
+    <ul>
+      <li>{{ plan.city }} - {{plan.country}} </li>
+      <li>Tipo plan: {{ plan.planType }}</li>
+      <li>Número de personas: {{ plan.numPersons }}</li>
+      <li>Número de días: {{ plan.numDays }}</li>
+      <li>Idioma: {{ plan.language }}</li>
+      <li>Costo: {{ plan.cost }}</li>
+      <li>Proveedor: {{ plan.provider }}</li>
+    </ul>
+  </li>
+</ul>

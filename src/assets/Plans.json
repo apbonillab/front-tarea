@@ -1,0 +1,95 @@
+[ {
+  "id": 1,
+  "name": "Bogotá romantica",
+  "description":"Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+  "image": "https://images.unsplash.com/photo-1536334906170-ffa95819c4d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bb92a6ff6c11ce3380ee77313f3cebe7&auto=format&fit=crop&w=750&q=80",
+  "cost": 250000,
+  "city": "Bogota",
+  "country": "Colombia",
+  "provider": "Viaja seguro",
+  "planType": "Romantico",
+  "numPersons": 2,
+  "numDays": 3,
+  "language": "Español" 
+},
+{
+  "id": 2,
+  "name": "Medellin al natural",
+  "description":"Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+  "image":"https://images.unsplash.com/photo-1520501247332-6fb052b72414?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a1113dbc7646574e2cb198f22df600a0&auto=format&fit=crop&w=764&q=80",
+  "cost": 450000,
+  "city": "Medellin",
+  "country": "Colombia",
+  "provider": "Viaja seguro",
+  "planType": "Ecologico",
+  "numPersons": 4,
+  "numDays": 5,
+  "language": "Español" 
+},
+
+{
+  "id": 3,
+  "name": "Santa Marta Aventurera",
+  "description":"Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+  "image":"https://images.unsplash.com/photo-1533406129549-d664f406c25f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bdf0b1be002bd087374fb312ad530d48&auto=format&fit=crop&w=686&q=80",
+  "cost": 450000,
+  "city": "Santa Marta",
+  "country": "Colombia",
+  "provider": "Viaja seguro",
+  "planType": "Ecologico",
+  "numPersons": 12,
+  "numDays": 5,
+  "language": "Español" 
+},
+
+
+{
+  "id": 4,
+  "name": "Amazonas Enigmatica",
+  "description":"Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+  "image":"https://images.unsplash.com/photo-1532732015839-005809486bb5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=815cdef977ce858385f2b9d2fdf5e289&auto=format&fit=crop&w=334&q=80",
+  "cost": 450000,
+  "city": "Leticia",
+  "country": "Colombia",
+  "provider": "Viaja seguro",
+  "planType": "Ecologico",
+  "numPersons": 8,
+  "numDays": 5,
+  "language": "Español" 
+},
+
+
+{
+  "id": 5,
+  "name": "Aventura con Ballenas",
+  "description":"Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+  "image":"https://images.unsplash.com/photo-1530099531892-0932c5324757?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=939e6e928aca58178fbf9862ef9d214e&auto=format&fit=crop&w=750&q=80",
+  "cost": 450000,
+  "city": "Buenaventura",
+  "country": "Colombia",
+  "provider": "Viaja seguro",
+  "planType": "Ecologico",
+  "numPersons": 8,
+  "numDays": 5,
+  "language": "Español" 
+},
+
+
+{
+  "id": 6,
+  "name": "Cartagena del Alma",
+  "description":"Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+  "image":"https://images.unsplash.com/photo-1534413340928-7bd74b65196f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=39ae3de863b432d46c78b408060a2455&auto=format&fit=crop&w=388&q=80",
+  "cost": 450000,
+  "city": "Cartagena",
+  "country": "Colombia",
+  "provider": "Viaja seguro",
+  "planType": "Romantico",
+  "numPersons": 8,
+  "numDays": 5,
+  "language": "Español" 
+}
+
+
+
+]
