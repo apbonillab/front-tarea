@@ -5,6 +5,7 @@ import { PlanListComponent } from '../plan/plan-list/plan-list.component';
 import { LandingComponent } from '../landing/landing.component';
 import { PlanFilterResultComponent } from '../plan/plan-filter-result/plan-filter-result.component';
 import { PlanDetailComponent } from '../plan/plan-detail/plan-detail.component';
+import { LoginComponent } from '../login/login.component';
 
 
 
@@ -15,25 +16,23 @@ const routes: Routes = [
             {
                 path: 'list',
                 component: PlanListComponent
+                //   component: PlanListComponent , canActivate: [AuthGuard]  ejemplo de como permitir ver esta url solo cuando este logeado
             },
             {
-                path:'filter/results',
+                path: 'filter/results',
                 component: PlanFilterResultComponent
             }
-            
-
         ]
     },
     {
         path: '',
         component: LandingComponent
-        
     },
     {
-        path:'plan/detail',
+        path: 'plan/detail',
         component: PlanDetailComponent
-    }
-    
+    },
+    { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({

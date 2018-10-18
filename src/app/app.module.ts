@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routing-module/app-routing.module';
 import { PlanModule } from './plan/plan.module';
 import { LandingComponent } from './landing/landing.component';
-import { Router, RouterOutlet,RouterModule } from "@angular/router";
-import { FormsModule } from '@angular/forms';
+import { Router, RouterOutlet, RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgxPaginationModule} from 'ngx-pagination';
+import { LoginComponent } from './login/login.component';
+import { AuthenticationService } from './services/authentication.service';
 
 
 @NgModule({
@@ -18,20 +20,21 @@ import { NgxPaginationModule} from 'ngx-pagination';
     AppComponent,
     LandingComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
-  //schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  // schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     PlanModule,
     RouterModule,
     FormsModule,
-    NgxPaginationModule    
+    NgxPaginationModule
   ],
- 
-  providers: [],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
